@@ -1,0 +1,11 @@
+.image-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 0 10px; /*0- for the spaces beween rows and 10px for the spaces between columns*/
+  grid-auto-rows: 10px; /*creates cells with 10px*/
+}
+
+.image-list img{
+  width: 250px;
+  grid-row-end: span 2;/*allots 2 cells for each image*/
+}
